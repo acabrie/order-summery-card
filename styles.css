@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;700;900&display=swap');
+
+
+:root{
+
+    --font-redhat: 'Red Hat Display';
+
+    --font-size-1: 1rem;
+    --font-size-2: 1.125rem;
+    --font-size-3: 1.5rem;
+
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desat-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+p{
+    margin: 0;
+}
+
+img,
+figure{
+    display: block;
+    max-width: 100%;
+}
+
+.fs-1{font-size: var(--font-size-1);}
+.fs-2{font-size: var(--font-size-2);}
+.fs-3{font-size: var(--font-size-3);}
+
+.fw-400{font-weight: 400;}
+.fw-500{font-weight: 500;}
+.fw-600{font-weight: 600;}
+.fw-700{font-weight: 700;}
+.fw-900{font-weight: 900;}
+
+.text-dark{color: var(--dark-blue);}
+.text-bright-blue{color: var(--bright-blue);}
+.text-desat-blue{color: var(--desat-blue);}
+
+.flex{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+}
+
+.margin{
+    margin-top: 2rem;
+}
+
+.ml-1{
+    margin-left: 1rem;
+}
+
+.ml-2{
+    margin-left: 2rem;
+}
+
+body{
+    
+    background-color: hsl(225, 71%, 90%);
+    font-family: var(--font-redhat);
+    text-align: center;
+}
+
+.main-content{
+    display: grid;
+    place-items: center;
+}
+
+.main-img{
+    border-radius: 20px 20px 0px 0px;
+}
+
+.content{
+    padding: 1rem;
+}
+
+.container{
+    position: relative;
+    top: 20%;
+    height: 600px;
+    background-color: white;
+    width: 340px;
+    margin-inline: auto;
+    border-radius: 20px;
+    box-shadow: 0px 15px 10px -15px hsl(223, 47%, 23%);
+}
+
+.pricing-content{
+    
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    max-width: 90%;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-inline: auto;
+}
+
+.btn{
+    width: 90%;
+    background-color: var(--bright-blue);
+    color: var(--very-pale-blue);
+    padding-block: 0.9rem;
+    padding-inline: 1.3rem;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 2rem;
+    box-shadow: 0px 15px 10px -15px  hsl(245, 75%, 52%);
+}
+
+.btn:hover{
+    opacity: 0.4;
+}
+
+.change:hover{
+    opacity: 0.4;
+}
+
+.cancel{
+   text-decoration: none;
+   opacity: 0.6;
+}
+
+.cancel:hover{
+    opacity: 1;
+}
+
+@media (min-width: 45em){
+
+    body{
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+    }
+    .container{
+        height: 660px;
+        top: 25%;
+        background-color: white;
+        width: 440px;
+        margin-inline: auto;
+        border-radius: 20px;
+    }
+
+    .description{
+        padding-inline: 2rem;
+    }
+
+    .content{
+        padding: 2rem;
+    
+    }
+
+    .ml-2{
+        margin-left: 5rem;
+    }
+
+    .margin{
+        margin-top: 2.5rem;
+    }
+
+}
